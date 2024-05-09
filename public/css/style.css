@@ -1,0 +1,1211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+.main {
+    height: 100%;
+    overflow: auto;
+}
+
+.container{
+    max-width: 1620px;
+    margin: 0 auto;
+}
+.container_min{
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+a, ul, ol, li{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+}
+
+body{
+    background-color: #151515;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+}
+
+:root {
+    --heading-font-size: 24px;
+    --subheading-font-size: 20px;
+    --main-font-size: 16px;
+    --small-font-size: 14px;
+}
+
+.heading {
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+}
+
+.subheading {
+    font-size: var(--subheading-font-size);
+    font-weight: 500;
+}
+
+.main-text {
+    font-size: var(--main-font-size);
+    font-weight: 400;
+}
+
+.small-text {
+    font-size: var(--small-font-size);
+    font-weight: 400;
+}
+
+.text-danger {
+    color: #FF7777;
+}
+.text-danger.login{
+    padding: 0 0 30px 0;
+    text-align: center;
+}
+
+.main_header{
+    padding: 30px 0;
+}
+
+.header_row,
+.main_nav_list,
+.lk_nav{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.header_row{
+    justify-content: space-between;
+}
+
+.main_nav_list .main_nav_item:not(:first-of-type),
+.lk_nav .lk_nav_item:not(:first-of-type) {
+    margin-left: 40px;
+}
+
+.lk_nav_item>.header_btn{
+    background: linear-gradient(92deg, #4747FF 5%, #0101E5 71%);
+    border-radius: 25px;
+    padding: 12px 40px;
+}
+
+.registration{
+    background-image: url('http://blyat/public/storage/img/reg_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow-y: auto;
+
+}
+.auth_form .auth_form_content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    max-width: 350px;
+}
+
+.auth_form_content>.text-danger p{
+    font-size: 12px;
+}
+
+.auth_form_content .input {
+    width: 300px; /* Занимает всю доступную ширину */
+    flex: 1;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    border-radius: 35px;
+    padding: 15px 25px;
+    margin: 6px 0;
+    color: #ffffff;
+}
+
+.auth_form_content .input::placeholder {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.auth_form {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth_caption{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.auth_subtitle{
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.40);
+    line-height: 160%;
+    max-width: 676px;
+}
+
+.form_btn{
+    padding: 15px 25px;
+    width: 350px;
+    text-align: left;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background: #4747FF;
+    border-radius: 35px;
+    margin: 25px 0;
+    position: relative;
+    overflow: hidden;
+}
+.auth_form_content button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Расстояние от правого края */
+    transform: translateY(-50%);
+    /* Указать путь к вашей иконке и настроить размер */
+    background-image: url('http://blyat/public/storage/img/right-arrow.png');
+    background-size: contain;
+    width: 25px; /* Настройте размер иконки по вашему усмотрению */
+    height: 25px;
+    background-repeat: no-repeat;
+}
+
+
+
+/*Глазик*/
+.password-container {
+    position: relative;
+}
+.field-icon {
+    position: absolute;
+    top: 35%;
+    left: 100%;
+    transform: translateX(-200%);
+    cursor: pointer;
+}
+
+
+/*главная страница*/
+.welcome_page_header{
+    background-image: url('http://blyat/public/storage/img/header_bg1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    position: relative;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.h2_header{
+    text-align: center;
+    font-size: 64px;
+    max-width: 45%;
+    margin: 0 auto;
+    padding: 100px 0 50px 0;
+}
+
+.header_subtitle{
+    color: white;
+    padding-bottom: 65px;
+}
+
+.secondary_btn{
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    padding: 12px 40px;
+    font-weight: 700;
+}
+
+.header_secondary_btn {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bg_images{
+    text-align: center;
+}
+
+.bg_images img{
+    position: absolute;
+    bottom: -13%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.bg_text_group>.text_bg{
+    font-size: 358px;
+    font-weight: 600;
+    letter-spacing: -23px;
+}
+.bg_text_group{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.bg_text_group>.text_bg:first-child{
+    margin-left: -14%;
+}
+.bg_text_group>.text_bg:nth-child(2){
+    margin-right: -10%;
+    padding-top: 130px;
+    margin-bottom: -50%;
+}
+
+/*о нас*/
+h3{
+    font-size: 54px;
+    font-weight: 600;
+}
+
+.description{
+    width: min-content;
+}
+.about_us h3{
+    max-width: 900px;
+    padding: 85px 0;
+    line-height: 140%;
+}
+p{
+    line-height: 140%;
+}
+.description_title{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 25px 0;
+}
+.description_photos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 80px;
+}
+
+.description:last-child{
+    margin-top: -100px;
+}
+
+/*блок с объявлениями*/
+.main_ads, .main_steps{
+    background-color: #2C2C2C;
+    border-radius: 50px;
+    margin-top: 100px;
+}
+
+.ad_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.main_ads p.main-text {
+    max-width: 50%;
+}
+.slider_buttons{
+    display: flex;
+    column-gap: 15px;
+}
+.slider_buttons button{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 100px;
+    border: 1px #3737EE solid;
+    color: #3737EE;
+    font-size: 24px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+.slider_buttons button:hover{
+    background: #3737EE;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+
+/*слайдер*/
+.slider {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    overflow: hidden;
+    padding: 50px 0 60px 0;
+    align-items: stretch;
+}
+
+.slide{
+    display: none;
+    transition: transform 0.5s;
+}
+.active {
+    display: block;
+}
+
+/*блок галереи*/
+.main_gallery h3{
+    padding: 85px 0;
+    max-width: 1050px;
+}
+
+
+.photo-marquee {
+    width: 100%; /* Ширина контейнера, в котором будут отображаться изображения */
+    overflow: hidden;
+    padding: 80px 0;
+    background: radial-gradient(100% 50% at 50% 50%, rgba(107.94, 96.26, 255, 0.50) 0%, rgba(21, 21, 21, 0) 100%);
+}
+
+.marquee-container {
+    display: flex; /* Установка отображения flex для контейнера, чтобы изображения шли в одну строку */
+    animation: marquee 15s linear infinite; /* Анимация бегущей строки */
+}
+
+.marquee-container img {
+    width: 215px; /* Ширина каждого изображения */
+    height: 215px; /* Высота каждого изображения */
+    margin-right: 70px; /* Расстояние между изображениями */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 70px)); /* Учитываем отступы между изображениями */
+    }
+}
+
+.marquee-container img:last-child {
+    margin-right: 0; /* У последнего изображения убираем правый margin */
+}
+
+.main_steps h3{
+    padding: 40px 0;
+    max-width: 50%;
+}
+
+/* блок с шагами */
+.all_steps{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 60px;
+    padding: 10px 0 60px 0;
+    align-items: stretch;
+}
+.step {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 30px 20px;
+    background: linear-gradient(106deg, #021EB2 0%, #9980E0 51%, #4E38DB 100%);
+    border-radius: 24px;
+    position: relative;
+}
+.step>.heading{
+    padding-bottom: 20px;
+    max-width: 70%;
+}
+.step>.grid {
+    gap: 120px; /* Отступ между элементами внутри grid */
+}
+
+.step>.grid>.profile_photo{
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+/* авторизированный. шапка и навигация*/
+
+.header_user{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.left_nav{
+    padding-top: 50px;
+}
+.left_nav_column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+.left_nav_column a{
+    display: flex;
+    align-items: center;
+}
+.left_nav_column img {
+    margin-right: 20px; /* Расстояние между изображением и текстом */
+}
+
+/* профиль */
+
+main.auth_main{
+    display: flex;
+}
+
+.right{
+    flex: 1;
+    padding: 0 0 80px 100px;
+}
+
+.lk_banner{
+    background: linear-gradient(106deg, #F258FF 0%, #8084E0 55%, #4E38DB 100%);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 200px;
+}
+.lk_head_info{
+    background: #1F1F1F;
+    border-radius: 40px;
+    padding: 20px 40px;
+    margin-top: -40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex.lk_columns{
+    column-gap: 30px;
+    margin: 20px 0;
+}
+
+.user_statistic {
+    margin-left: auto; /* Перемещаем статистику вправо до конца контейнера */
+    align-self: flex-end;
+}
+
+.statistic{
+    column-gap: 30px;
+}
+
+.statistic li{
+    text-align: center;
+}
+.statistic li>p{
+    font-weight: 400;
+}
+.statistic li>p.number{
+    font-weight: 500;
+    color: #8AA4FF;
+    font-size: 32px;
+}
+
+.lk_head_wrapper>.main_info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-left: 30px;
+}
+.lk_head_wrapper>.main_info .user_name{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.lk_head_wrapper>.img_wrapper {
+    margin-top: -100px; /* Поднимаем аватарку на половину вверх */
+}
+/* контент профиля */
+.left_lk_column{
+    width: 715px;
+}
+
+.right_lk_column{
+    width: 563px;
+}
+
+
+.post-container {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+#post-text {
+    resize: none;
+    padding: 15px 25px;
+    flex: 1;
+    background: #1F1F1F;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    transition: height 0.3s ease; /* Плавное изменение высоты textarea */
+}
+#post-text::placeholder{
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.icons {
+    display: flex;
+    column-gap: 20px;
+    background: #1F1F1F;
+    border-radius: 40px;
+    padding: 20px 25px;
+}
+
+.icons label {
+    cursor: pointer;
+}
+#publish-btn{
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background: #4747FF;
+    border-radius: 35px;
+    display: none;
+}
+#publish-btn, .icon-block {
+    height: 100%;
+    vertical-align: top;
+}
+
+.icon-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Добавим класс для изменения border-radius при увеличении высоты textarea */
+#post-text.expanded {
+    border-radius: 20px; /* новый border-radius при увеличении textarea */
+}
+#post-text:focus, input:focus{
+    outline: none;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    height: 100%;
+}
+
+/*пост*/
+
+.post{
+    background: #1F1F1F;
+    border-radius: 40px;
+    padding: 25px 50px;
+}
+.make_post{
+    margin-bottom: 20px;
+}
+.user_post>.main_info p.user_name{
+    padding-bottom: 7px;
+}
+.user_post.flex{
+    column-gap: 15px;
+    justify-content: normal;
+    align-items: center;
+}
+
+.grey{
+    color: rgba(255, 255, 255, 0.39);
+}
+
+.post_content{
+    padding: 20px 0;
+}
+
+.post>.feedback{
+    display: flex;
+    column-gap: 10px;
+}
+
+.post>.feedback button{
+    background: rgba(160.44, 160.44, 160.44, 0.16);
+    padding: 5px 12px;
+    border: none;
+    color: #8AA4FF;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+/*правый столбец. контакты*/
+
+.contact_title{
+    padding: 15px 25px;
+    background: #1F1F1F;
+    border-radius: 40px;
+}
+
+.user_contacts .flex{
+    column-gap: 20px;
+    justify-content: normal;
+    align-items: center;
+}
+.contact_info >.img_wrapper{
+    color: #8AA4FF;
+}
+
+.user_contacts{
+    padding: 35px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+}
+
+.contact_content{
+    background: #1F1F1F;
+    border-radius: 40px;
+    padding: 25px 50px;
+    margin: 20px 0;
+}
+.contact_info>.main_info p.email{
+    padding-top: 10px;
+}
+
+
+/*мои объявления*/
+.ad_content{
+    background: #1F1F1F;
+    border-radius: 40px;
+    padding: 25px 50px;
+    margin: 20px 0;
+}
+
+.user_ad_title{
+    padding: 15px 25px;
+    background: #1F1F1F;
+    border-radius: 40px;
+}
+
+.empty_ads{
+    text-align: center;
+    padding: 25px 0;
+}
+
+.empty_ads img{
+    padding-bottom: 15px;
+}
+
+/*страница с объявлениями*/
+.filtering{
+    margin: 20px auto;
+}
+.inside_content{
+    background-color: #1F1F1F;
+    border-radius: 50px;
+    padding: 40px 40px;
+}
+
+.catalog_grid {
+    display: grid;
+    gap: 30px; /* Расстояние между столбцами */
+    grid-template-columns: repeat(3, 1fr); /* Значения по умолчанию */
+}
+
+.auth_grid {
+    grid-template-columns: repeat(2, 1fr); /* Для авторизованных пользователей */
+}
+
+.unauth_grid {
+    grid-template-columns: repeat(3, 1fr); /* Для не авторизованных пользователей */
+}
+
+.all_advertisements>.container>.empty_ads{
+    text-align: center; /* Центрируем текст по горизонтали */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрируем по вертикали и по горизонтали */
+    /* другие стили для вашего сообщения об отсутствии объявлений */
+}
+
+.catalog_item{
+    padding: 35px;
+    flex: 1;
+    background: linear-gradient(106deg, #1B02B2 0%, #8084E0 51%, #4E38DB 100%);
+    border-radius: 24px;
+}
+.slide.catalog_item{
+    padding: 50px;
+}
+
+/*старые стили объявления*/
+
+.slide>.grid>div .ad_genres{
+    padding: 20px 0 30px 0;
+}
+.slide>.grid>div .ad_genres li{
+    padding: 10px 20px;
+    width: 80px;
+}
+
+.grid>div .main-text{
+    padding-bottom: 35px;
+}
+
+.slide>.grid>div .card_button{
+    padding: 12px 40px;
+    font-size: 16px;
+}
+.slide>.grid>.profile_photo{
+    max-width: 180px;
+}
+
+/*объявление*/
+.ad_genres{
+    display: flex;
+    column-gap: 10px;
+    padding: 15px 0 25px 0;
+    align-items: center;
+}
+.ad_genres li{
+    padding: 6px 15px;
+    width: 50px;
+    text-align: center;
+    background: rgba(228.97, 228.44, 255, 0.43);
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.main-text span, .ad_genres span{
+    font-weight: 600;
+}
+.main-text li{
+    padding-bottom: 10px;
+}
+
+.card_button{
+    padding: 10px 35px;
+    background: rgba(12.75, 0, 63.75, 0.33);
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr max-content; /* Колонки - левая часть занимает все свободное место, правая часть - минимально необходимое */
+    gap: 10px;
+}
+.profile_photo{
+    align-self: end;
+    max-width: 150px;
+}
+
+.ad_card_title:after{
+    content: '';
+    display: inline-block;
+    background-size: cover; /* или contain, в зависимости от ваших требований */
+    width: 24px; /* Ширина иконки */
+    height: 24px; /* Высота иконки */
+    margin-left: 12px;
+    vertical-align: middle;
+}
+.ad_card_title.about_me_title:after{
+    background-image: url('http://blyat/public/storage/img/info.svg');
+}
+.ad_card_title.requirements_title:after{
+    background-image: url('http://blyat/public/storage/img/magic-book.svg');
+}
+.ad_card_title.contacts_title:after{
+    background-image: url('http://blyat/public/storage/img/phone-call.svg');
+}
+
+.ad_card_title{
+    padding-bottom: 20px;
+}
+
+.ad_card_profile_photo p{
+    font-size: 18px;
+    padding: 20px 0 30px 0;
+    text-align: center;
+}
+.ad_card_profile_photo img.profile_photo{
+    max-width: 170px;
+    margin: 0 auto;
+}
+.ad_card_profile_photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
+}
+.main_info>.flex>.ad_title{
+    padding-bottom: 30px;
+}
+
+.input_stroke{
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.25);
+    border-radius: 35px;
+    border: 1px #7B98FF solid;
+    padding: 14px 20px;
+}
+
+.additional_card_info>.flex{
+    flex-wrap: wrap;
+}
+.additional_card_info>.flex>.input_stroke{
+    flex-basis: calc(50% - 55px); /* Ширина элемента на два столбца с учетом отступов */
+    margin: 5px;
+}
+
+.ad_card_profile_photo>.card_button{
+    background: linear-gradient(106deg, #0234B2 0%, #808AE0 51%, #4538DB 100%);
+    font-size: 16px;
+}
+
+.card_description>.ad_genres li{
+    background: rgba(160.44, 160.44, 160.44, 0.16);
+}
+.ad_card_description, .ad_card_contacts{
+    margin: 20px 0;
+}
+
+.create_and_search .flex {
+    align-items: center;
+}
+
+.create_advertisement_btn {
+    flex-grow: 2.5;
+    margin-right: 30px;
+    background: #1F1F1F;
+    padding: 15px 50px;
+}
+
+.search_advertisement {
+    flex-grow: 1.5;
+    background: #1F1F1F;
+    border-radius: 40px;
+    padding: 17px 50px;
+}
+.search_advertisement .search_input {
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+}
+.search_advertisement .search_input::placeholder {
+    color: rgba(255, 255, 255, 0.40);
+}
+
+.input-group {
+    flex: 1;
+    margin-right: 20px; /* Отступ справа между группами */
+}
+
+.input-group:last-child {
+    margin-right: 0; /* Убираем отступ справа у последней группы */
+}
+
+.input-group > .input_stroke {
+    background-color: transparent; /* Прозрачный фон для элементов ввода */
+    padding: 12px 20px; /* Внутренние отступы */
+    width: -webkit-fill-available;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+}
+.input-group > select::-ms-expand {
+    display: none;
+}
+select.input_stroke {
+    background-color: #1F1F1F; /* Цвет фона для раскрывающегося списка */
+    color: white; /* Белый цвет текста в раскрывающемся списке */
+}
+
+select.input_stroke option {
+    background-color: #1F1F1F; /* Цвет фона для опций в выпадающем списке */
+    color: #BDBDBD; /* Белый цвет текста в опциях */
+}
+select:active, select:hover {
+    outline: none;
+}
+
+.instrument-categories{
+    padding-top: 40px;
+}
+.category-container {
+    text-align: center;
+}
+.instrument-category {
+    border-radius: 9px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.instrument-category::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+.instrument-category.guitar{
+    background: #DBD8FF;
+    box-shadow: 0px 1px 8px 3px rgba(255, 255, 255, 0.25);
+    border: 2px #807AC4 solid;
+}
+.instrument-category.piano{
+    background: #E4FFD8;
+    box-shadow: 0px 1px 8px 3px rgba(255, 255, 255, 0.25);
+    border: 2px #51A22F solid;
+}
+.instrument-category.violin{
+    background: #D8F8FF;
+    box-shadow: 0px 1px 8px 3px rgba(255, 255, 255, 0.25);
+    border: 2px #52B0C4 solid;
+}
+.instrument-category.drum{
+    background: #FED8FF;
+    box-shadow: 0px 1px 8px 3px rgba(255, 255, 255, 0.25);
+    border: 2px #D57AD8 solid;
+}
+.instrument-category.trumpet{
+    background: #FFFAE1;
+    box-shadow: 0px 1px 8px 3px rgba(255, 255, 255, 0.25);
+    border: 2px #ECD048 solid;
+}
+.instrument-category.ukulele{
+    background: #DBD8FF;
+    box-shadow: 0px 1px 8px 3px rgba(255, 255, 255, 0.25);
+    border: 2px #807AC4 solid;
+}
+.instrument-category.singer{
+    background: #E4FFD8;
+    box-shadow: 0px 1px 8px 3px rgba(255, 255, 255, 0.25);
+    border: 2px #51A22F solid;
+}
+.instrument-category.electric_guitar{
+    background: #D8F8FF;
+    box-shadow: 0px 1px 8px 3px rgba(255, 255, 255, 0.25);
+    border: 2px #52B0C4 solid;
+}
+.instrument-category.flute{
+    background: #FED8FF;
+    box-shadow: 0px 1px 8px 3px rgba(255, 255, 255, 0.25);
+    border: 2px #D57AD8 solid;
+}
+.instrument-category.saxophone{
+    background: #FFFAE1;
+    box-shadow: 0px 1px 8px 3px rgba(255, 255, 255, 0.25);
+    border: 2px #ECD048 solid;
+}
+.instrument-category.guitar::before {
+    background: url('http://blyat/public/storage/img/icon-guitar.svg') no-repeat;
+}
+.instrument-category.piano::before {
+    background: url('http://blyat/public/storage/img/icon-piano.svg') no-repeat;
+}
+.instrument-category.violin::before {
+    background: url('http://blyat/public/storage/img/icon-violin.svg') no-repeat;
+}
+.instrument-category.drum::before {
+    background: url('http://blyat/public/storage/img/icon-drum.svg') no-repeat;
+}
+.instrument-category.trumpet::before {
+    background: url('http://blyat/public/storage/img/icon-trumpet.svg') no-repeat;
+}
+
+.instrument-category.ukulele::before {
+    background: url('http://blyat/public/storage/img/icon-ukulele.svg') no-repeat;
+}
+.instrument-category.singer::before {
+    background: url('http://blyat/public/storage/img/icon-microphone.svg') no-repeat;
+}
+.instrument-category.electric_guitar::before {
+    background: url('http://blyat/public/storage/img/icon-bass-guitar.svg') no-repeat;
+}
+.instrument-category.flute::before {
+    background: url('http://blyat/public/storage/img/icon-flute.svg') no-repeat;
+}
+.instrument-category.saxophone::before {
+    background: url('http://blyat/public/storage/img/icon-saxophone.svg') no-repeat;
+}
+.create_ad_form>.form_btn{
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+/*модальное окно с жанрами*/
+.modal {
+    display:none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #1F1F1F;
+    margin: 10% auto;
+    padding: 40px;
+    border-radius: 9px;
+    max-width: 700px;
+    text-align: center;
+}
+.modal-content>.flex{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content>.flex>label {
+    display: inline-block;
+    margin-right: 20px; /* Добавляем отступ между жанрами */
+    margin-bottom: 20px;
+}
+.modal-content>.flex>label.main-text{
+    font-weight: 200;
+}
+.modal-content > .flex > label input[type="checkbox"] {
+    margin-right: 5px; /* Даем отступ между чекбоксом и текстом лейбла */
+}
+.modal-content>.form_btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 250px;
+    text-align: center;
+}
+.modal-content p{
+    padding: 15px 0;
+}
+.modal-content>.btnSubmit:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.create_ad h1{
+    text-align: center;
+}
+.create_ad div.ad_type{
+    padding: 50px 0;
+}
+input[type=radio] {
+    display:none;
+    margin:10px;
+}
+input[type=radio] + label {
+    display:inline-block;
+    font-weight: 500;
+    background-color: inherit;
+    flex: 0 0 45%;
+    text-align: center;
+}
+
+input[type=radio]:checked + label {
+    background: linear-gradient(106deg, #1B02B2 0%, #8084E0 51%, #4E38DB 100%);
+}
+
+.create_ad_form h2{
+    padding-bottom: 30px;
+}
+
+.create_ad_form div.flex>.input-group{
+    margin-bottom: 30px;
+}
+.input-group.input_textarea{
+    margin-top: 30px;
+}
+
+textarea::placeholder{
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+}
+.input-group textarea, .input-group input{
+    color: white;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #7B98FF;
+    border-radius: 0.35em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #7B98FF;
+    background-color: #354161;
+}
+.label_margin_right{
+    margin-right: 15px;
+}
+
+.create_ad.requirements, .create_ad.contact_info{
+    margin: 20px auto;
+}
+/*жесть футер*/
+footer{
+    margin: 100px 0;
+    background-color: #1e1e1e;
+    padding: 30px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
